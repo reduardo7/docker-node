@@ -3,6 +3,6 @@ version: "3"
 services:
   yarn:
     build: .
-    image: reduardo7/node:10
+    image: reduardo7/node:11
     volumes:
       - ./:/data
