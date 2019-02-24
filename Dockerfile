@@ -3,7 +3,10 @@ FROM ubuntu:18.10
 ENV DEBIAN_FRONTEND=noninteractive
 ARG NODE_VERSION=11
 
-RUN apt-get update && apt-get install -y apt-transport-https curl wget gnupg
+RUN apt-get update && apt-get install -y \
+  apt-transport-https curl wget \
+  gnupg \
+  git
 
 # Node
 # https://github.com/nodesource/distributions/blob/master/README.md
